@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+/*  Name: Antonio Monteze Hayes Punzo
+	Assignment: Homework 2
+	Date:04/10/2015 */   
+	
+body {
+  background: #0C090A url(Pluto_planet.png) no-repeat center 25px fixed;
+  font-family: Comic Sans MS, MS Sans serif;
+  font-size: 100%;
+  line-height: 175%;
+  margin: 0 15% 0;
+  text-color: #E5E4E2;
+}
+#nav
+{
+	overflow: hidden;
+}
+#nav ul 
+{
+	padding: 0;
+	margin: 0;
+	list-style-type:none;
+	width: 100%;
+	
+	
+
+} 
+#nav ul li a
+{
+	display: block;
+	width: 15em;
+	height: 4em;
+	padding: .5em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	color: #1589FF;
+	border: 2px solid rgb(175,175,175);
+	border-radius: 1px;
+	text-shadow: #666 .1em .1em .1em;
+	box-shadow: 0 5px 3px rgba(0,0,0,.5);
+	margin: .1em;
+	position: relative;
+	float: left;
+	font-family: Comic Sans MS,MS Sans Serif;
+	text-shadow: .1em .1em silver;
+	-webkit-transition: background-color .2s, border-color .2s;
+    -mox-transition: background-color .2s, border-color .2s;
+    -o-transition: background-color .2s, border-color .2s;
+    transition: background-color .2s, border-color .2s, top .2s
+    .5s box-shadow .2s .5s;
+}
+#nav ul a:visited
+{
+	
+	color: #C0C0C0;
+	border-color: #0000FF;
+	
+}
+#nav ul  a:hover
+{
+	
+	border-color: #0000FF;
+	transform: scale(1.5);
+}
+
+#nav ul a:active
+{
+	top: 3px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+#footer
+{
+	clear: right;
+	color: #E5E4E2;
+	
+}

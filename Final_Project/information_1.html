@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!--Page Author: Geoffrey Huntoon-->
+	<!--Additional Assistance denoted by member initials-->
+	<!--Group members:Antonio Monteze Hayes Punzo, Justin Frank Kunkel-->
+	<!--Final Project, Information Page 1-->
+	<!--IT 180 4/29/2015-->  
+	<meta charset = "utf-8">
+	
+	<title>MSA Information Page 1</title>
+	
+	<link rel="stylesheet" href="style2.css"
+			href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    
+	<style>
+	
+		#accordion p
+		{
+			background-color: #659EC7;
+			background-color: rgba(0,0,0,.25);
+		}
+		#accordion img { max-width: 50%; }
+		
+		#accordion section { 
+			clear: both; 
+			max-width: 50%;
+
+			
+	
+		}
+		
+	   #accordion .ui-accordion-header{ <!--AP-->
+		background-image:none;
+		outline: 2px solid #C0C0C0;
+		width: 50%;
+		clear: both;
+		
+		<!--/AP-->}
+     
+		#general img, #death img {
+			clear: right;
+			float: right;
+			padding-left: 10px;
+		}	
+		
+		#general section, #death section { float: right; }
+		
+		#birth img, #life img {
+			float: left;
+			padding-right: 10px;
+		}
+		
+		#death2 { padding-top: 150px; }
+	
+	</style>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		
+	<script>
+			
+		$(function() {
+			$( "#accordion" ).accordion({ heightStyle: "content", /**AP*/active:false, collapsible:true/**AP*/ });
+		});
+    
+	</script>
+	
+</head>
+
+<body>
+<!--AP-->
+	<header>
+	
+		
+			<div class="nav">
+			<ul>
+				<li><a href="Home_page.html">Home Page</a></li>
+				<li><a href="">Instructional Pages</a>
+					<ul>
+						<li><a href="information_1.html">Star Life Cycle</a></li>
+						<li><a href="information_2.html">Star Burn Out</a></li>
+						<li><a href="information_3.html">Rover Expeditions</a></li>
+						<li><a href="information_4.html">Alien Life</a></li>
+					</ul>
+				</li>
+				<li><a href="sources.html">More Information</a></li>
+				<li><a href="Site_Eval2.html">Site Evaluation</a></li>
+			</ul>
+			</div>
+				<div id="banner">	
+				<br /><h1><a href="Home_page.html"><img src="spac.png"
+				alt="Space Logo" style="width:100px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;Maryland Space Association</h1>
+				</div>
+			
+
+	</header>	
+	<div class="maincontent">
+	<section><!--/AP-->
+	<h2>The Life Cycle of a Star</h2>
+	
+	<div id = "accordion">
+	
+		<h3>What Are Stars?</h3>
+		<div id = "general">
+			<img src = "sun.jpg" alt = "Sun">
+			
+			<p>Stars are giant balls of ionized gas, or plasma, that convert hydrogen
+			into helium through nuclear fusion at millions of degrees. They are in 
+			constant balance between their intense gravity, which holds them together, 
+			and the energy released from fusion, which tries to force them apart. The 
+			hottest stars appear blue; relatively cooler stars appear orange or red. 
+			Stars can be many thousands of times larger than our Sun, and can have 
+			surface temperatures ranging from 4,000K (Kelvin) to 50,000K (roughly the 
+			same in degrees Celsius), as well as a core temperature of 10 to 15 million K.</p>
+			
+			<section><small><i>Image:</i> The Sun is a comparatively 
+			small star, but perfect for life on Earth.</small></section>
+		</div>
+		
+		<h3>Birth of a Star</h3>
+		<div id = "birth">
+			<img src = "rosette_nebula.jpg" alt = "Nebula">
+				
+			<p>Stars are "born" in <dfn>nebulae</dfn>, clouds of hydrogen gas and dust in space. 
+			As the gas condenses it exerts a greater gravitational force on other debris. As 
+			more debris and gas collapse inward, their collisions begin to generate
+			heat and light, and they become protostars. If enough matter is collected, and 
+			if temperatures approach 10 million K, hydrogen atoms will begin to fuse into 
+			helium. At this point, huge amounts of energy are released, the gas stops 
+			collapsing inward, and the now-equalized <dfn>Main Sequence</dfn> star begins 
+			to shine.</p>
+			
+			<section><small><i>Image:</i> The Rosette Nebula. The bright stars in the 
+			center are very young, at only a few million years old.</small></section>
+		</div>
+			
+		<h3>Star Life</h3>
+		<div id = "life">
+			<img src = "star_size.jpg" alt = "Star Comparison">
+			
+			<p>A Main Sequence star the size of our Sun will burn consistently for about 
+			10 billion years. Larger stars may only last a few billion or even only a few
+			million years. As it runs out of hydrogen, the core of the star will contract 
+			and its outer shell will expand and cool. The star has become a <dfn>red 
+			giant</dfn> (or in some cases a hotter, larger <dfn>blue giant</dfn>), and may 
+			remain so for a few million years, fusing helium into carbon. To put it in 
+			perspective, when the Sun reaches this stage, it will completely envelop 
+			Mercury and Venus!</p>
+
+			<section><small><i>Image:</i> Our sun has a few billion years of fuel left before it
+			becomes a red giant, like Arcturus.</small></section>			
+		</div>
+		
+		<h3>Death</h3>
+		<div id = "death">
+			<img src = "cat_eye_nebula.jpg" alt = "Cat's Eye Nebula">
+			
+			<p>When a star the mass of our Sun reaches the end of its red giant stage,
+			it will completely lose its balance and shed most of its mass in a 
+			<dfn>nova</dfn>. Its hydrogen and helium is thrown outward; this gas forms a 
+			<dfn>planetary nebula</dfn> from which new stars can be formed. The remainder
+			of the star, its core and a thin layer of the outer shell, will still shine 
+			for many years and is called a <dfn>white dwarf</dfn>. When white dwarfs 
+			expend the rest of their fuel, they finally "die," stop glowing, and become 
+			<dfn>black dwarfs</dfn>.</p>
+			
+			<section><small><i>Image:</i> The Cat's Eye planetary nebula. <br>
+			The center of the "eye" is the creator of the nebula, now a white 
+			dwarf.</small></section>
+			
+			<img src = "supernova.jpg" alt = "Supernova">
+			
+			<p id = "death2">If a star has a mass many times larger than that of the Sun, the end of 
+			its life may be much more spectacular. Massive stars can grow well past 
+			red giant size until they become <dfn>red supergiants</dfn>, with temperatures
+			at their cores approaching 600 million K! Heavier and heavier elements are 
+			fused together in the core at this temperature until the core is mostly iron;
+			at this point, gravity finally wins, pulling the outer shell of gas in and 
+			ricocheting it out in a massive explosion called a <dfn>supernova</dfn>. <br>The
+			old core of the star may remain as a neutron star, or may collapse in on 
+			itself to form a black hole - learn more about them on the next page!</p>
+			
+			<section><small><i>Image:</i> Artist's conception, 
+			based on observed data, of Supernova 1987A.</small></section>
+		</div>
+	
+	</div> <!--End of accordion-->
+	<!--AP--></section>
+	<footer>
+				 
+					<p>
+						<small>
+							<p>Company Address: 1-78-908 Huble Street, 134340 Pluto. Phone#306-555-1343, email:<a href="Site_Eval2.html">research@msa.gov</a>
+							Last Modified: <time>2015-04-29 14:30</time><br></p>
+							<p>Background image Courtesy of <a href="http://ultra.wikia.com/wiki/Pluto">http://ultra.wikia.com/wiki/Pluto</a><br></p>
+							<p>Logo image Courtesy of <a href="http://www.clker.com/clipart-24107.html">http://www.clker.com/clipart-24107.html</a> Shared by Mohamed Ibrahim <time>2008-08-31</time>
+	
+						</small>
+					</p>
+				
+			</footer>
+	</div><!--/AP-->
+</body>
+
+</html>

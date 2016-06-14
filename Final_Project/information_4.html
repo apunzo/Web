@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!--Page Author: Geoffrey Huntoon-->
+	<!--Additional Assistance denoted by member initials-->
+	<!--Group members:Antonio Monteze Hayes Punzo, Justin Frank Kunkel-->
+	<!--Final Project, Information Page 4-->
+	<!--IT 180 4/29/2015--> 
+	<meta charset = "utf-8">
+	
+	<title>MSA Information Page 4</title>
+	
+	<link rel="stylesheet" href="style2.css"
+			href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    
+	<style>
+	
+		#accordion img { max-width: 50%; }
+		#accordion p
+		{
+			background-color: #659EC7;
+			background-color: rgba(0,0,0,.25);
+		}
+		#accordion section { 
+			clear: both; 
+			max-width: 50%;
+		}
+		 #accordion .ui-accordion-header{ <!--AP-->
+		background-image:none;
+		outline: 2px solid #C0C0C0;
+		width: 50%;
+		clear: both;
+		
+		<!--/AP-->}
+		
+		#exo img {
+			float: left;
+			padding-right: 10px;
+		}
+		
+		#seti img {
+			clear: right;
+			float: right;
+			padding-left: 10px;
+		}
+
+		#seti section { float: right; }
+		
+	</style>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		
+	<script>
+			
+		$(function() {
+			$( "#accordion" ).accordion({ heightStyle: "content", /**AP*/active:false, collapsible:true/**AP*/ });
+		});
+    
+    
+	</script>
+	
+</head>
+
+<body>
+<!--AP-->
+	<header>
+	
+		
+			<div class="nav">
+			<ul>
+				<li><a href="Home_page.html">Home Page</a></li>
+				<li><a href="">Instructional Pages</a>
+					<ul>
+						<li><a href="information_1.html">Star Life Cycle</a></li>
+						<li><a href="information_2.html">Star Burn Out</a></li>
+						<li><a href="information_3.html">Rover Expeditions</a></li>
+						<li><a href="information_4.html">Alien Life</a></li>
+					</ul>
+				</li>
+				<li><a href="sources.html">More Information</a></li>
+				<li><a href="Site_Eval2.html">Site Evaluation</a></li>
+			</div>
+				<div id="banner">	
+				<br /><h1><a href="Home_page.html"><img src="spac.png"
+				alt="Space Logo" style="width:100px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;Maryland Space Association</h1>
+				</div>
+			
+
+	</header>	
+	<div class="maincontent">
+	<section><!--/AP-->
+	<h2>Search For Alien Life</h2>
+	
+	<div id = "accordion">
+	
+		<h3>Exoplanets</h3>
+		<div id = "exo">
+			<img src = "exoplanets.jpg" alt = "Exoplanet Comparison">
+			
+			<p><dfn>Exoplanets</dfn> are planets that orbit around other stars, and their
+			research is vital to the potential discovery of extraterrestrial life.  At
+			first, scientists believed that all planets form according to the core accretion
+			theory, which perfectly depicts the formation of our solar system as we 
+			hypothesized.  The theory describes our system starting out as a thick disc of
+			gas and dust accumulating around the newly-formed Sun.  Over millions of years,
+			the disc solidified into the rocky, small inner planets and the massive, gaseous
+			outer planets.  This theory worked well until we became able to see other planetary
+			systems, in which it seems that exoplanets and other stars can form in any way
+			physically possible.  We learned that our solar system demonstrates just one 
+			mode of formation, and that our system is unusual in the number of planets 
+			orbiting the Sun. This meant other Earth-like planets, that are potentially ideal for 
+			extraterrestrial life (if the life is similar to that on Earth), would have to 
+			be closely observed in how they are formed.</p>
+			
+			<section><small><i>Image:</i> More exoplanets are discovered every year.</small></section>
+			
+		</div>
+		
+		<h3>SETI</h3>
+		<div id = "seti">
+			<img src = "satellites.jpg" alt = "SETI Array">
+				
+			<p>SETI, or Search for Extra-Terrestrial Intelligence, is one of several 
+			organizations dedicated to finding alien life.  They scan the heavens 
+			with arrays of satellites, searching for radio or other signals that are not
+			generated naturally.  They also search for evidence of conditions on exoplanets
+			that would be suitable for single-celled life, such as water and temperature 
+			ranges within the bounds found on Earth.  SETI is always looking for ways to 
+			beat the odds and use technology to traverse rough terrain on Earth in order 
+			to practice for potential excursions on Venus, Mars, and Jupiter's moons.</p>
+			
+			<section><small><i>Image:</i> An array of SETI satellites.</small></section>
+		</div>
+			
+	</div> <!--End of accordion-->
+	<!--AP--></section>
+	<footer>
+				 
+					<p>
+						<small>
+							<p>Company Address: 1-78-908 Huble Street, 134340 Pluto. Phone#306-555-1343, email:<a href="Site_Eval2.html">research@msa.gov</a>
+							Last Modified: <time>2015-04-29 14:30</time><br></p>
+							<p>Background image Courtesy of <a href="http://ultra.wikia.com/wiki/Pluto">http://ultra.wikia.com/wiki/Pluto</a><br></p>
+							<p>Logo image Courtesy of <a href="http://www.clker.com/clipart-24107.html">http://www.clker.com/clipart-24107.html</a> Shared by Mohamed Ibrahim <time>2008-08-31</time>
+	
+						</small>
+					</p>
+				
+			</footer>
+	</div><!--/AP-->
+</body>
+
+</html>

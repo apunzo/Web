@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!--Page Author: Geoffrey Huntoon-->
+	<!--Additional Assistance denoted by member initials-->
+	<!--Group members:Antonio Monteze Hayes Punzo, Justin Frank Kunkel-->
+	<!--Final Project, Information Page 2-->
+	<!--IT 180 4/29/2015-->  
+	<meta charset = "utf-8">
+	
+	<title>MSA Information Page 2</title>
+	
+	<link rel="stylesheet" href="style2.css"
+			href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    
+	<style>
+	
+		#accordion img { max-width: 50%; }
+		#accordion p
+		{
+			background-color: #659EC7;
+			background-color: rgba(0,0,0,.25);
+		}
+		#accordion section {
+			clear: both;
+			max-width: 50%;
+		}
+		
+		#accordion .ui-accordion-header{ <!--AP-->
+		background-image:none;
+		outline: 2px solid #C0C0C0;
+		width: 50%;
+		clear: both;
+		
+		<!--/AP-->}
+		#nstar img, #black_hole img {
+			float: left;
+			padding-right: 10px;
+		}
+		
+		#pulsar img {
+			clear: right;
+			float: right;
+			padding-left: 10px;
+		}
+
+		#pulsar section { float: right; }
+	
+	</style>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		
+	<script>
+			
+		$(function() {
+			$( "#accordion" ).accordion({ heightStyle: "content", /**AP*/active:false, collapsible:true/**AP*/ });
+		});
+    
+    
+	</script>
+	
+</head>
+
+<body>
+
+	<!--AP-->
+	<header>
+	
+		
+			<div class="nav">
+			<ul>
+				<li><a href="Home_page.html">Home Page</a></li>
+				<li><a href="">Instructional Pages</a>
+					<ul>
+						<li><a href="information_1.html">Star Life Cycle</a></li>
+						<li><a href="information_2.html">Star Burn Out</a></li>
+						<li><a href="information_3.html">Rover Expeditions</a></li>
+						<li><a href="information_4.html">Alien Life</a></li>
+					</ul>
+				</li>
+				<li><a href="sources.html">More Information</a></li>
+				<li><a href="Site_Eval2.html">Site Evaluation</a></li>
+			</ul>
+			</div>
+				<div id="banner">	
+				<br /><h1><a href="Home_page.html"><img src="spac.png"
+				alt="Space Logo" style="width:100px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;Maryland Space Association</h1>
+				</div>
+			
+
+	</header>	
+	<div class="maincontent">
+	<section><!--/AP-->
+	<h2>What's Left After Big Stars Burn Out?</h2>
+	
+	<div id = "accordion">
+	
+		<h3>Neutron Stars</h3>
+		<div id = "nstar">
+			<img src = "neutron_star.jpg" alt = "Neutron Star">
+		
+			<p>After a star 4 to 8 times larger than the Sun expends the rest of its fuel 
+			and goes through a supernova, the core that is left behind is a <dfn>neutron 
+			star</dfn>.  Atoms, the fundamental building blocks of matter, normally have 
+			a nucleus of positively charged protons, with negatively-charged electrons 
+			orbiting that nucleus and a lot of empty space in between the two.  Within a 
+			neutron star, however, the gravitational pull is so strong that it crushes atoms, 
+			eliminating all the empty space between nuclei.  Protons and electrons are 
+			forced together, equalizing each other and forming neutrons.  Because of this, 
+			neutron stars tend to only be about the size of a city, but are so dense that 
+			a teaspoon's worth of their matter weighs millions of tons.  They radiate intense
+			energy via X-rays, and have surface temperatures of over 1 million K.</p>
+			
+			<section><small><i>Image:</i> Artist's conception of a neutron star.</small></section>
+		</div>
+
+		<h3>Pulsars</h3>
+		<div id = "pulsar">
+			<img src = "pulsar.jpg" alt = "Pulsar">
+			
+			<p>Sometimes a neutron star will have so much energy left to expel that it is
+			reclassified as a <dfn>pulsar</dfn>.  Pulsars spin at several hundred revolutions 
+			per second, and emit huge bursts of gamma rays and X-rays at their poles. 
+			Scientists observe them by their "pulses" - the rays emitted when their poles 
+			are pointing at Earth - and are still learning why they emit rays in this way.</p>
+			
+			<section><small><i>Image:</i> Artist's conception of a pulsar emitting gamma 
+			rays.</small></section>
+		</div>
+		
+		<h3>Black Holes</h3>
+		<div id = "black_hole">
+			<img src = "black_hole.jpg" alt = "Black Hole">
+		
+			<p>If a star is 10 times larger than the Sun or greater, it may become a neutron
+			star at the end of its life, but will likely become so dense that it will completely
+			collapse inward on itself to form a <dfn>black hole</dfn>. Black holes are incredibly
+			dense, at least a few times as dense as the Sun, and have such powerful gravity 
+			that even light cannot escape them.  They consume all matter around them and continue
+			to grow.  Some black holes are <dfn>supermassive</dfn>, with billions of times the 
+			mass of the Sun.  It is theorized that supermassive black holes reside at the
+			heart of most galaxies, but scientists are not sure how these giants become so large.</p>
+			
+			<section><small><i>Image:</i> Artist's conception of a black hole absorbing matter.
+			Black holes are so dense they distort the space around them.</small></section>
+			
+			<p>Black holes have two major parts: an event horizon and a singularity. The 
+			<dfn>event horizon</dfn> around a black hole is the radius at which light 
+			cannot escape it.  The singularity is its central point, where its mass is 
+			concentrated.</p>
+		</div>
+		
+	</div> <!--End of accordion-->
+	<!--AP--></section>
+	<footer>
+				 
+					<p>
+						<small>
+							<p>Company Address: 1-78-908 Huble Street, 134340 Pluto. Phone#306-555-1343, email:<a href="Site_Eval2.html">research@msa.gov</a>
+							Last Modified: <time>2015-04-29 14:30</time><br></p>
+							<p>Background image Courtesy of <a href="http://ultra.wikia.com/wiki/Pluto">http://ultra.wikia.com/wiki/Pluto</a><br></p>
+							<p>Logo image Courtesy of <a href="http://www.clker.com/clipart-24107.html">http://www.clker.com/clipart-24107.html</a> Shared by Mohamed Ibrahim <time>2008-08-31</time>
+	
+						</small>
+					</p>
+				
+			</footer>
+	</div><!--/AP-->
+
+</body>
+
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	

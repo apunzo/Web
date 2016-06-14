@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!--Page Author:Justin Frank Kunkel -->
+	<!--Additional Assistance denoted by member initials-->
+	<!--Group members:Antonio Monteze Hayes Punzo, Geoffrey Huntoon-->
+	<!--Final Project, Information Page 3-->
+	 
+	<meta charset = "utf-8">
+	
+	<title>MSA Information Page 3</title>
+	
+	<link rel="stylesheet" href="style2.css"
+			href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    
+	<style>
+	
+		#accordion img { max-width: 50%; }
+		#accordion p
+		{
+			background-color: #659EC7;
+			background-color: rgba(0,0,0,.25);
+		}
+		#accordion section {
+			clear: both;
+			max-width: 50%;
+		}
+		 #accordion .ui-accordion-header{ <!--AP-->
+		background-image:none;
+		outline: 2px solid #C0C0C0;
+		width: 50%;
+		clear: both;
+		
+		<!--/AP-->}
+		
+		#mars img, #future img {
+			float: left;
+			padding-right: 10px;
+		}
+		
+		#specs img {
+			clear: right;
+			float: right;
+			padding-left: 10px;
+		}
+
+		#specs section { float: right; }
+	
+	</style>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		
+	<script>
+			
+		$(function() {
+			$( "#accordion" ).accordion({ heightStyle: "content", /**AP*/active:false, collapsible:true/**AP*/ });
+		});
+    
+	</script>
+	
+</head>
+
+<body>
+<!--AP-->
+<header>
+	
+		
+			<div class="nav">
+			<ul>
+				<li><a href="Home_page.html">Home Page</a></li>
+				<li><a href="">Instructional Pages</a>
+					<ul>
+						<li><a href="information_1.html">Star Life Cycle</a></li>
+						<li><a href="information_2.html">Star Burn Out</a></li>
+						<li><a href="information_3.html">Rover Expeditions</a></li>
+						<li><a href="information_4.html">Alien Life</a></li>
+					</ul>
+				</li>
+				<li><a href="sources.html">More Information</a></li>
+				<li><a href="Site_Eval2.html">Site Evaluation</a></li>
+			</ul>
+			</div>
+				<div id="banner">	
+				<br /><h1><a href="Home_page.html"><img src="spac.png"
+				alt="Space Logo" style="width:100px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;Maryland Space Association</h1>
+				</div>
+			
+
+	</header>	
+	<div class="maincontent">
+	<section><!--/AP-->
+	<h2>Rover Expeditions</h2>
+	
+	<div id = "accordion">
+	
+		<h3>The Trip to Mars</h3>
+		<div id = "mars">
+			<img src = "rover_1.jpg" alt = "Rover Shot on Mars">
+		
+			<p>The the trip to mars was a costly one but we mostly got our funding from company backers
+			and by using online crowd-funding websites.  With our rover being comparable to
+			NASA's Curiosity expedition rover which is the size of a small SUV then it is expected that
+			this is going to be a pricey journey.  This expedition took months of planning and calculations
+			to make sure everything was exact and perfect.  We needed to be flawless in order for this to
+			be a success and in order for us to be able to get funding for future expeditions.  If this is 
+			seen as a failure then there goes our expedition program.  Alas, everything went as planned and
+			our rover (appropriately named Ares) got some great shots for us when it reached Mars. 
+			</p>
+			
+			<section><small><i>Image:</i> Picture of Mars from Ares the rover.</small></section>
+		</div>
+
+		<h3>Rover Specs</h3>
+		<div id = "specs">
+			<img src = "rover_specs.jpg" alt = "Anatomy of a Rover">
+			
+			<p>As you can see these space exploration rovers are a little more than complicated.  They are very
+			intricate machines and take months to years to make.  Ours took a little over a year to complete and
+			get ready for its first trip, to Mars.  Every rover has a body that houses all of its vital organs
+			including its brain and energy source.  The brain is nothing more than computer processors while the 
+			energy component is a battery.  We also had temperature controls installed and a layer of insulation.
+			To make the rover have a humans perspective a neck and head were installed with a camera attached at 
+			the top for a human-esque view.  The rover is also outfitted with arms and small clamps for hands. 
+			Wheels are its source of mobility.  Lastly it has antennas for its much needed communication aspect.
+			</p>
+			
+			<section><small><i>Image:</i> Diagram of a rover.</small></section>
+		</div>
+		
+		<h3>Future Projects</h3>
+		<div id = "future">
+			<img src = "neptune.jpg" alt = "Neptune">
+		
+			<p>Our current project is building an underwater rover to send to Neptune.  We are currently in the
+			beginning parts of planning but everything looks like its going well.  Looking for new backers is tough
+			but we a slowly getting to our goal.  We should reach it within a few more months.  Backers on our website
+			who contribute will be able to come to our facilities and see first hand what the rover brings back from
+			the watery giant.  Find us on Kickstarter.
+			</p>
+			
+			<section><small><i>Image:</i> Actual real picture of Neptune, that exists.</small></section>
+		</div>
+		
+	</div> <!--End of accordion-->
+	
+	<!--AP--></section>
+	
+	<footer>
+				 
+					<p>
+						<small>
+							<p>Company Address: 1-78-908 Huble Street, 134340 Pluto. Phone#306-555-1343, email:<a href="Site_Eval2.html">research@msa.gov</a>
+							Last Modified: <time>2015-04-29 14:30</time><br></p>
+							<p>Background image Courtesy of <a href="http://ultra.wikia.com/wiki/Pluto">http://ultra.wikia.com/wiki/Pluto</a><br></p>
+							<p>Logo image Courtesy of <a href="http://www.clker.com/clipart-24107.html">http://www.clker.com/clipart-24107.html</a> Shared by Mohamed Ibrahim <time>2008-08-31</time>
+	
+						</small>
+					</p>
+				
+			</footer>
+    </div><!--/AP-->
+</body>
+
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
